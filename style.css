@@ -1,0 +1,67 @@
+.formSection {
+  margin: 100px 0;
+  background-color: burlywood;
+}
+.wrapper {
+  background-color: burlywood;
+  padding: 50px;
+}
+.formSection label,
+legend {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.fromRow {
+  width: 100%;
+  display: flex;
+}
+.formColumn {
+  width: 100%;
+  padding: 0 10px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-bottom: 3px solid red;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* border-radius: 0.375rem; */
+  border-radius: 0;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  /* border-color: #86b6fe00; */
+  border-bottom: 3px solid red;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgb(13 110 253 / 0%);
+}
+@media (max-width: 767.98px) {
+  .wrapper {
+    background-color: aqua;
+    padding: 15px;
+  }
+  .fromRow {
+    flex-direction: column;
+  }
+  .formColumn {
+    padding: 0 0px;
+  }
+}
+::placeholder {
+  color: blue !important;
+}
+.btn {
+  padding: 0.5rem 2rem;
+}
